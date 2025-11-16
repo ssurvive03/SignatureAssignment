@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paws &amp; Hearts Adoption | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header home-hero">
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1>Paws &amp; Hearts Pet Adoption</h1>
+        <p>Giving pets an opportunity to find their forever home!</p>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="logo">Paws &amp; Hearts</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pets</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section class="section intro">
+        <div class="content-wrap">
+            <h2>Why We're Different</h2>
+            <p>
+                At Paws &amp; Hearts, we prioritize ensuring that each pet is placed
+                with the right family. Each pet in our facility is thoroughly checked, 
+                vaccinated, and tested by a behavioralist. We ensure to match each pet
+                to our customers based on behavior, lifestyle, and home experience.
+            </p>
+        </div>
+    </section>
+
+    <section class="section two-column">
+        <div class="content-wrap columns">
+            <article>
+                <h3>Who We Are</h3>
+                <p>
+                    A local, non-profit pet adoption company that is dedicated to ensuring
+                    each pet, regardless of adoption, has an enriched atmosphere with lots
+                    of attention and care. 
+                </p>
+                <p>
+                    We like to partner with local shelters and pet foster homes to bring
+                    all at-risk pets into our facility to provide an environment that 
+                    emulates a home.
+                </p>
+            </article>
+            <article>
+                <h3>Our Pets</h3>
+                <p>
+                    We have a good mix of puppies, adult dogs, and senior dogs. We also have 
+                    kittens, adult cats, and senior cats. Each of our animals are spayed/neutered,
+                    microchipped, and up to date on all vaccines!
+                </p>
+                <p>
+                    Visit our Pets page to browse available cats and dogs. You can also stop in
+                    to visit us anytime to meet the pets in-person!
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section featured-pets">
+        <div class="content-wrap">
+            <h2>Featured Pets</h2>
+            <div class="pet-grid">
+                <article class="pet-card">
+                    <img src="images/Copper.jpg" alt="Copper">
+                    <h3>Copper</h3>
+                    <p>2 year old well-trained dalmation who loves other pets and children</p>
+                </article>
+                <article class="pet-card">
+                    <img src="images/Todd.jpg" alt="Todd">
+                    <h3>Todd</h3>
+                    <p>7 year old short-haird grey cat, trained, and loves laser-pointers!</p>
+                </article>
+                <article class="pet-card">
+                    <img src="images/Neeco.jpg" alt="Neeco">
+                    <h3>Neeco</h3>
+                    <p>12 year old shih-tzu. Loves to cuddle and relax!</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Paws &amp; Hearts Pet Adoption. All rights reserved.</p>
+    <p>Constructed by: <strong>Brandon Giarratano</strong> &mdash;
+        <a href="mailto:giarratano.b@northeastern.edu">giarratano.b@northeastern.edu</a>
+    </p>
+</footer>
+
+<script>
+    const navToggle = document.querySelector('nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>
