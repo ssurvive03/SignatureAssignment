@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sansj-serif;
+    line-height: 1.5;
+    color: #111827;
+    background: linear-gradient(135deg, #fff8e5 0%, #fff3cc 40%, #fff7d6 100%);
+}
+
+.site-header {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 16px;
+    overflow: hidden;
+}
+
+.site-header .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 196, 61, 0.85), rgba(255, 176, 0, 0.55));
+    z-index: 0;
+}
+
+.site-header .header-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-header h1 {
+    font-size: clamp(2.4rem, 5vw, 3.2rem);
+    margin-bottom: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.site-header p {
+    font-size: 1rem;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    border-radius: 999px;
+    background: rgba(17, 24, 39, 0.28);
+    color: #fffef5;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.home-hero {
+    background: url("images/Sadie_Main_Page.jpg") center/cover no-repeat;
+}
+
+.main-nav {
+    background-color: #fffdf5;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    color: #1d4ed8;
+    text-decoration: none;
+    padding: 12px 0;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 14px 0;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #1d4ed8;
+}
+
+.section {
+    padding: 40px 16px;
+}
+
+.content-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.two-column .columns {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.two-column article {
+    flex: 1 1 260px;
+}
+
+.section h2 {
+    margin-bottom: 0.75em;
+}
+
+.section h3 {
+    margin-bottom: 0.5em;
+}
+
+.section p + p {
+    margin-top: 0.6em;
+}
+
+.featured-pets .pet-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pet-card {
+    border: 1px solid #ffe7a1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.18);
+}
+
+.pet-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background-color: transparent;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.price-table caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: 600;
+    padding: 12px 16px;
+    background-color: #e5efff;
+}
+
+.price-table th,
+.price-table td {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.price-table thead {
+    background-color: #1d4ed8;
+    color: #ffffff;
+}
+
+.price-table tbody tr:nth-child(even) {
+    background-color: #f3f4ff;
+}
+
+.bulleted {
+    padding-left: 1.1rem;
+    margin-top: 0.25;
+}
+
+.bulleted li + li {
+    margin-top: 0.35em;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 18px 12px 22px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #111827;
+    border-top: 3px solid #3a7bd5;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.site-footer a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        color: #1f2933;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 16px;
+        left: 16px;
+        background-color: #ffffff;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 12px;
+    }
+}

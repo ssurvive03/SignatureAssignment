@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paws &amp; Hearts Adoption | Prices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header home-hero">
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1>Adoption Fees &amp; Services</h1>
+        <p>Prices that support medical care, food, and daily care of each animal.</p>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="logo">Paws &amp; Hearts</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pets</a></li>
+            <li><a href="prices.html" class="active">Prices</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section class="section intro">
+        <div class="content-wrap">
+            <h2>Adoption Fees</h2>
+            <p>
+                Adoption fees help to cover the daily care, spay/neuter, vaccines, microchipping,
+                and testing of the pets within our facility. Adoption fees are listed below
+                so you can plan ahead before coming in!
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="content-wrap">
+            <div class="table-wrapper">
+                <table class="price-table">
+                    <caption>Adoption Fees</caption>
+                    <thead>
+                        <tr>
+                            <th>Pet Type</th>
+                            <th>Adoption Fee</th>
+                            <th>Includes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kittens (under 1 year)</td>
+                            <td>$175</td>
+                            <td>Spay/Neuter, vaccines, microchip, FeLV/FIV test, starter supplies</td>
+                        </tr>
+                        <tr>
+                            <td>Adult Cats (1-7 years)</td>
+                            <td>$130</td>
+                            <td>Spay/Neuter, vaccines, microchip, FeLV/FIV test</td>
+                        </tr>
+                        <tr>
+                            <td>Senior Cats (8+ years)</td>
+                            <td>$75</td>
+                            <td>Same as adult cats, but includes senior wellness package</td>
+                        </tr>
+                        <tr>
+                            <td>Puppies (under 1 year)</td>
+                            <td>$275</td>
+                            <td>Spay/neuter, vaccines, microchip, deworming, training guide</td>
+                        </tr>
+                        <tr>
+                            <td>Adult Dogs (1-7 years)</td>
+                            <td>$225</td>
+                            <td>Spay/neuter, vaccines, microchip, heartworn test</td>
+                        </tr>
+                        <tr>
+                            <td>Senior Dogs (8+ years)</td>
+                            <td>$150</td>
+                            <td>Same as adult dogs, but includes senior wellness package</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="section two-column">
+        <div class="content-wrap columns">
+            <article>
+                <h2>Discounts</h2>
+                <ul class="bulleted">
+                    <li>Bonded pair discount: <strong>$50 off</strong> total adoption fees.</li>
+                    <li>Military, veteran, and first responder discount: <strong>$25 off</strong> total adoption fees.</li>
+                    <li>Seniors adopting senior pets: <strong>50% off </strong> total adoption fees.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Return &amp; Re-homing Policy</h2>
+                <p>
+                    If your adoption unfortunatley does not work out, we require that
+                    the pet(s) be returned to Paws &amp; Hearts so we can safely re-home
+                    them.
+                </p>
+                <ul class="bulleted">
+                    <li>Returnes within 30 days: <strong>No re-homing fee</strong>.</li>
+                    <li>Returns after 30 days: <strong>$50 re-homing fee</strong> to help cover care.</li>
+                    <li>Training available before following through with re-home at no cost!</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Paws &amp; Hearts Pet Adoption. All rights reserved.</p>
+    <p>Constructed by: <strong>Brandon Giarratano</strong> &mdash;
+        <a href="mailto:giarratano.b@northeastern.edu">giarratano.b@northeastern.edu</a>
+    </p>
+</footer>
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+</script> 
+
+</body>
+</html>
