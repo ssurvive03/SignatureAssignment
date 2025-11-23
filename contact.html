@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paws &amp; Hearts Adoption | Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header home-hero">
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1>Contact Paws &amp; Hearts</h1>
+        <p>Have questions about adoption, volunteering, or making a donation? Feel free to contact us!</p>
+    </div>
+</header>
+
+<nav class="main.nav">
+    <div class="nav-inner">
+        <a href="index.html" class="logo">Paws &amp; Hearts</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pets</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="services.html">Support Services</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section class="section">
+        <div class="content-wrap contact-form-wrapper">
+            <h2>Send Us a Message</h2>
+            <p>
+                Use this form below to get in touch with us regarding pet availability, adoption requirements,
+                volunteer work, or anything else you may have questions about!
+            </p>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name<span aria-hidden="true">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required minlength="2" maxlength="60">
+                        <p class="form-helper">Please enter your first and last name.</p>
+                    </div>
+
+                    <div class="from-group">
+                        <label for="email">Email Address<span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <p class="form-helper">We will use this to reply to your message only!</p>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
+                        placeholder="555-123-4567">
+                        <p class="form-helper">Format: 555-123-4567 (optional).</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferredContact">Preferred Contact Method<span aria-hidden="true">*</span></label>
+                        <select id="preferredContact" name="preferredContact" required>
+                            <option value="">-- Please Select --</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                            <option value="either">Either one is fine</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Reason for Contact<span aria-hidden="true">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="reason" value="adoption" required> Adoption Question</label>
+                        <label><input type="radio" name="reason" value="volunteer"> Volunteer</label>
+                        <label><input type="radio" name="reason" value="donation"> Donation</label>
+                        <label><input type="radio" name="reason" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="petInterest">Specific Pet Name</label>
+                    <input type="text" id="petInterest" name="petInterest" maxlength="40">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message<span aria-hidden="true">*</span></label>
+                    <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea>
+                    <p class="form-helper">Write your message here with as much detail as possible.</p>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="consent" required>
+                            I understand that submitting this form does not guarantee adoption.
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit">Submit Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+    <p>&copy; 2025 Paws &amp; Hearts Pet Adoption. All rights reserved.</p>
+    <p>Constructed by: <strong>Brandon Giarratano</strong> &mdash;
+        <a href="mailto:giarratano.b@northeastern.edu">giarratano.b@northeastern.edu</a>
+    </p>
+</footer>
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>
+
