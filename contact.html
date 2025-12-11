@@ -16,7 +16,7 @@
     </div>
 </header>
 
-<nav class="main.nav">
+<nav class="main-nav">
     <div class="nav-inner">
         <a href="index.html" class="logo">Paws &amp; Hearts</a>
         <button class="nav-toggle" aria-label="Toggle navigation">
@@ -25,11 +25,10 @@
 
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pets</a></li>
+            <li><a href="pets.html">Pets</a></li>
             <li><a href="prices.html">Prices</a></li>
             <li><a href="services.html">Support Services</a></li>
-            <li><a href="#">Media</a></li>
+            <li><a href="media.html">Media</a></li>
             <li><a href="contact.html" class="active">Contact Us</a></li>
         </ul>
     </div>
@@ -47,19 +46,25 @@
             <form class="contact-form" action="#" method="post">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="fullName">Full Name<span aria-hidden="true">*</span></label>
-                        <input type="text" id="fullName" name="fullName" required minlength="2" maxlength="60">
-                        <p class="form-helper">Please enter your first and last name.</p>
+                        <label for="firstName">First Name<span aria-hidden="true">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required minlength="2" maxlength="40">
+                        <p class="form-helper">Please enter your firstname.</p>
                     </div>
 
-                    <div class="from-group">
-                        <label for="email">Email Address<span aria-hidden="true">*</span></label>
-                        <input type="email" id="email" name="email" required>
-                        <p class="form-helper">We will use this to reply to your message only!</p>
+                    <div class="form-group">
+                        <label for="lastName">Last Name<span aria-hidden="true">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required minlength="2" maxlength="40">
+                        <p class="form-helper">Please enter your last name.</p>
                     </div>
                 </div>
                 
                 <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address<span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <p class="form-helper">We will use this to reply to your message only!</p>
+                    </div>
+                
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
                         <input
@@ -70,6 +75,21 @@
                         placeholder="555-123-4567">
                         <p class="form-helper">Format: 555-123-4567 (optional).</p>
                     </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City<span aria-hidden="true">*</span></label>
+                        <input type="text" id="city" name="city" required minlength="2" maxlength="60">
+                        <p class="form-helper">Enter the city you live in.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zip">ZIP Code<span aria-hidden="true">*</span></label>
+                        <input type="text" id="zip" name="zip" required maxlength="10" placeholder="00000 or 00000-0000">
+                        <p class="form-helper">U.S. ZIP code (5 digits or 5+4).</p>
+                    </div>
+                </div>
                     
                     <div class="form-group">
                         <label for="preferredContact">Preferred Contact Method<span aria-hidden="true">*</span></label>
@@ -80,37 +100,36 @@
                             <option value="either">Either one is fine</option>
                         </select>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label>Reason for Contact<span aria-hidden="true">*</span></label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="reason" value="adoption" required> Adoption Question</label>
-                        <label><input type="radio" name="reason" value="volunteer"> Volunteer</label>
-                        <label><input type="radio" name="reason" value="donation"> Donation</label>
-                        <label><input type="radio" name="reason" value="other"> Other</label>
+                    <div class="form-group">
+                        <label>Reason for Contact<span aria-hidden="true">*</span></label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="reason" value="adoption" required> Adoption Question</label>
+                            <label><input type="radio" name="reason" value="volunteer"> Volunteer</label>
+                            <label><input type="radio" name="reason" value="donation"> Donation</label>
+                            <label><input type="radio" name="reason" value="other"> Other</label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="petInterest">Specific Pet Name</label>
-                    <input type="text" id="petInterest" name="petInterest" maxlength="40">
-                </div>
+                    <div class="form-group">
+                        <label for="petInterest">Specific Pet Name</label>
+                        <input type="text" id="petInterest" name="petInterest" maxlength="40">
+                    </div>
                 
-                <div class="form-group">
-                    <label for="message">Your Message<span aria-hidden="true">*</span></label>
-                    <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea>
-                    <p class="form-helper">Write your message here with as much detail as possible.</p>
-                </div>
-
-                <div class="form-group">
-                    <div class="checkbox-group">
-                        <label>
-                            <input type="checkbox" name="consent" required>
-                            I understand that submitting this form does not guarantee adoption.
-                        </label>
+                    <div class="form-group">
+                        <label for="message">Your Message<span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea>
+                        <p class="form-helper">Write your message here with as much detail as possible.</p>
                     </div>
-                </div>
+
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="consent" required>
+                                I understand that submitting this form does not guarantee adoption.
+                            </label>
+                        </div>
+                    </div>
 
                 <button type="submit">Submit Message</button>
             </form>
@@ -129,6 +148,49 @@
     const navLinks = document.querySelector('.nav-links');
     navToggle.addEventListener('click', () => {
         navLinks.classList.toggle('open');
+    });
+
+    document.addEVentListener('DOMContentLoaded', () => {
+        const form = document.querySelector('.contact-form');
+        if (!form) return;
+
+        function toTitleCase(str) {
+            return str
+            .toLowerCase()
+            .replace(/\b\w/g, char => char.toUpperCase());
+        }
+
+        form.addEventListener('submit', function (e) {
+            const firstNameInput = document.getElementById('firstName');
+            const lastNameInput = document.getElementById('lastName');
+            const cityInput = document.getElementById('city');
+            const emailInput = document.getElementById('email');
+            const zipInput = document.getElementById('zip');
+
+            firstNameInput.value = toTitleCase(firstNameInput.value.trim());
+            lastNameInput.value = toTitleCase(lastNameInput.value.trim());
+            cityInput.value = toTitleCase(cityInput.value.trim());
+
+            const email = emailInput.value.trim();
+            const zip = zipInput.value.trim();
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const zipPattern = /^\d{5}(-\d{4})?$/;
+            const errors = [];
+
+            if (!emailPattern.test(email)) {
+                errors.push('Please enter a valid emial address (e.g., name@example.com).');
+            }
+
+            if (!zipPattern.test(zip)) {
+                errors.push('Please enter a valid ZIP code (e.g., 04011 or 04011-1234).');
+            }
+
+            if (errors.lenght > 0) {
+                e.preventDefault();
+                alert(errors.join('\n'));
+            }
+        });
     });
 </script>
 

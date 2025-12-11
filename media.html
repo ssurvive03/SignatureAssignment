@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paws &amp; Hearts Adoption | Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header home-hero">
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1>Photo & Video Gallery</h1>
+        <p> Take a look at some of our pets in action!</p>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class=logo>Paws &amp; Hearts</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Pets</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="services.html">Support Services</a></li>
+            <li><a href="media.html" class="active">Media</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+
+    <section class="section">
+        <div class="content-wrap">
+            <h2>Photo Gallery</h2>
+            <p>Please enjoy these fun moments from our pets and our community.</p>
+
+            <div class="media-grid">
+                <figure class="media-item">
+                    <img src="images/copper_and_todd.jpg" alt="Copper and Todd">
+                    <figcaption>Copper and Todd laying together like usual.</figcaption>
+                </figure>
+
+                <figure class="media-item">
+                    <img src="images/Eyes.jpg" alt="Look at those eyes">
+                    <figcaption>Sadie has some beautiful eyes!</figcaption>
+                </figure>
+
+                <figure class="media-item">
+                    <img src="images/todd2.jpg" alt="Todd all curled up">
+                    <figcaption>You'll often find Todd sleeping in this positon.</figcaption>
+                </figure>
+
+                <figure class="media-item">
+                    <img src="images/Sadie2.jpg" alt="Sadie's ride home">
+                    <figcaption>This was Sadie's first ride in a car at 8 weeks.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="content-wrap">
+            <h2>Videos</h2>
+            <p>Here are some short clips of our pets having fun.</p>
+
+            <div class="media-grid">
+                
+                <div class="media-item">
+                    <video class="media-video" controls>
+                        <source src="videos/Snow.mp4" type="video/mp4">
+                    </video>
+                    <p class="video-caption">Sadie Loves the Snow</p>
+                </div>
+
+                <div class="media-item">
+                    <video class="media-video" controls>
+                        <source src="videos/sadie_ocean.mp4" type="video/mp4">
+                    </video>
+                    <p class="video-caption">Sadie swimming in the ocean</p>
+                </div>
+
+                <div class="media-item">
+                    <video class="media-video" controls>
+                        <source src="videos/sadie_copper.mp4" type="video/mp4">
+                    </video>
+                    <p class="video-caption">Sadie and Copper playing together</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Paws &amp; Hearts Pet Adoption. All rights reserved.</p>
+    <p>Constructed by: <strong>Brandon Giarratano</strong> &mdash;
+        <a href="mailto:giarratano.b@northeastern.edu">giarratano.b@northeastern.edu</a>
+    </p>
+</footer>
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>

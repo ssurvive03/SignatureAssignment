@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paws &amp; Hearts Adoption | Pets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header home-hero">
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1>Available Pets</h1>
+        <p> Browse our list of pets waiting for you to take them to their forever home!</p>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class=logo>Paws &amp; Hearts</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html" class="active">Pets</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="services.html">Support Services</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section class="section intro">
+        <div class="content-wrap">
+            <h2>Find The Right Pet For You!</h2>
+            <p>
+                Every pet in our car has been spayed/neutered, microchipped, and
+                are up to date on all their vaccinations. We spend our time getting 
+                to know each and every pet under our care so we can ensure that we
+                will find the perfect match for you and your family!
+            </p>
+            <p>
+                The pets listed on this page are just a sample of the large selection
+                of pets we have! Please feel free to contact us for a full and 
+                up-to-date list.
+            </p>
+        </div>
+    </section>
+
+    <section class="section featured-pets">
+        <div class="content-wrap">
+            <h2>Dogs Available for Adoption</h2>
+            <div class="pet-grid">
+                <article class="pet-card">
+                    <img src="images/Copper.jpg" alt="Copper, a 2-year-old Dalmatian">
+                    <div class="pet-card-body">
+                        <h3>Copper</h3>
+                        <p class="pet-meta">2 years old | Female | Dalmation</p>
+                        <p>
+                            A well-trained dog who loves to play fetch! She is great with kids
+                            and loves to play with other dogs. Copper enjoys log walks and 
+                            cuddling on the couch.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="pet-card">
+                    <img src="images/Neeco.jpg" alt="Neeco, a senior shih-tzu">
+                    <div class="pet-card-body">
+                        <h3>Neeco</h3>
+                        <p class="pet-meta">12 years old | Male | Shih-tzu</p>
+                        <p>
+                            Neeco is a calm and gentl senior dog who loves to relax on 
+                            the couch. He is best in a home where he can nap, relax, 
+                            and be your shadow!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="pet-card">
+                    <img src="images/Sadie.jpg" alt="Sadie, a gentle fun loving Husky">
+                    <div class="pet-card-body">
+                        <h3>Sadie</h3>
+                        <p class="pet-meta">2 years old | Female | Husky</p>
+                        <p>
+                            Sadie is extremely social and get along with kids, 
+                            other dogs, and any human she meets! She is very 
+                            well trained and will follow you everywhere you go. 
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section featured-pets">
+        <div class="content-wrap">
+            <h2>Cats Available for Adoption</h2>
+            <div class="pet-grid">
+                <article class="pet-card">
+                    <img src="images/Todd.jpg" alt="Todd, a 7-year old gray cat">
+                    <div class="pet-card-body">
+                        <h3>Todd</h3>
+                        <p class="pet-meta">7 years old | Male | Domestic Short Hair</p>
+                        <p>
+                            Todd is a very relaxed and loving cat. If you let him outside 
+                            he will always come back. He loves to lay under the covers with 
+                            you and is very playful!
+                        </p>
+                    </div>
+                </aritcle>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="content-wrap">
+            <h2>Ready to Adopt?</h2>
+            <p>
+                If you see a pet you're interested in, please contact us via our <a href="contact.html">Contact Us 
+                page. You can also come in anytime during our business hours to spend time with each pet in person! 
+                Our staff is eager to help you find the perfect pet for your home!
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Paws &amp; Hearts Pet Adoption. All rights reserved.</p>
+    <p>Constructed by: <strong>Brandon Giarratano</strong> &mdash;
+        <a href="mailto:giarratano.b@northeastern.edu">giarratano.b@northeastern.edu</a>
+    </p>
+</footer>
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>
